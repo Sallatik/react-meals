@@ -1,0 +1,11 @@
+.total-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.total-amount h2 {
+  font-size: inherit;
+}

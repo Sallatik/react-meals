@@ -1,9 +1,10 @@
 import styles from "./Cart.module.css";
 import Modal from "./Modal";
+import TotalAmount from "./TotalAmount";
 
 const Cart = ({ onClose }) => (
   <Modal className={styles.cart} onClose={onClose}>
-    Hello, World!
+    <TotalAmount />
   </Modal>
 );
 
