@@ -1,10 +1,10 @@
 import CartButton from "./CartButton";
 import styles from "./Header.module.css";
 
-const Header = () => (
+const Header = ({ onOpenCart }) => (
   <header className={styles["page-header"]}>
     <h1>ReactMeals</h1>
-    <CartButton />
+    <CartButton onClick={onOpenCart} />
   </header>
 );
 
