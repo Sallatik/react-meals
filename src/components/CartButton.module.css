@@ -1,0 +1,22 @@
+.cart-button {
+  font-size: inherit;
+  color: inherit;
+  display: flex;
+  background-color: rgb(72, 22, 22);
+  padding: 15px 30px;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 250px;
+  border: none;
+}
+
+.cart-button:hover {
+  background-color: rgb(58, 17, 17);
+  cursor: pointer;
+}
+
+.cart-count {
+  background-color: rgb(138, 55, 55);
+  font-weight: bold;
+  padding: 5px 10px;
+}

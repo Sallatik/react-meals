@@ -1,0 +1,14 @@
+.name {
+  margin-bottom: 10px;
+}
+
+.description {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: red;
+  margin-bottom: 10px;
+}

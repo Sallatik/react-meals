@@ -1,0 +1,11 @@
+.info {
+  margin: 100px auto;
+  text-align: center;
+  color: white;
+  background-color: rgb(79, 79, 79);
+  padding: 20px 20px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

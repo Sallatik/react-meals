@@ -1,0 +1,7 @@
+.meal-list {
+  margin: 100px auto;
+  width: 900px;
+  background-color: white;
+  padding: 30px 30px;
+  list-style: none;
+}

@@ -1,0 +1,25 @@
+.amount-label {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.amount-input {
+  font-size: inherit;
+  width: 3em;
+}
+
+.add-button {
+  display: block;
+  font-size: inherit;
+  color: white;
+  background-color: rgb(72, 22, 22);
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: rgb(58, 17, 17);
+}

@@ -1,0 +1,10 @@
+.meal {
+  border-bottom: 5px solid grey;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.meal:last-child {
+  margin-bottom: 0;
+}

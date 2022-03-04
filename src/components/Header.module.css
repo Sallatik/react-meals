@@ -1,0 +1,7 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(138, 55, 55);
+  color: white;
+  padding: 30px 100px;
+}
