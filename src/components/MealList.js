@@ -31,7 +31,13 @@ const DUMMY_MEALS = [
 const MealList = () => (
   <ul className={styles["meal-list"]}>
     {DUMMY_MEALS.map(({ id, name, description, price }) => (
-      <Meal key={id} name={name} description={description} price={price} />
+      <Meal
+        key={id}
+        id={id}
+        name={name}
+        description={description}
+        price={price}
+      />
     ))}
   </ul>
 );
