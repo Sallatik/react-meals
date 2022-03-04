@@ -14,8 +14,11 @@ const MealForm = ({ id, name, price }) => {
 
   return (
     <form className={styles["meal-form"]} onSubmit={onSumbit}>
-      <label className={styles["amount-label"]}>Amount</label>
+      <label className={styles["amount-label"]} htmlFor="amount">
+        Amount
+      </label>
       <input
+        id="amount"
         className={styles["amount-input"]}
         type="number"
         value={amount}
