@@ -1,0 +1,35 @@
+.cart-controls {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart-controls button {
+  display: block;
+  padding: 15px;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.close {
+  color: rgb(72, 22, 22);
+  border: 3px solid rgb(72, 22, 22);
+  background-color: white;
+}
+
+.order {
+  background-color: rgb(72, 22, 22);
+  color: white;
+  border: none;
+  border: 3px solid rgb(72, 22, 22);
+}
+
+.order:hover {
+  background-color: rgb(58, 17, 17);
+}
+
+.close:hover {
+  background-color: rgb(227, 227, 227);
+}
