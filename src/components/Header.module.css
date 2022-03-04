@@ -4,4 +4,7 @@
   background-color: rgb(138, 55, 55);
   color: white;
   padding: 30px 100px;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
