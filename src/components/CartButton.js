@@ -4,12 +4,12 @@ import CartContext from "../context/CartContext";
 import { useContext } from "react";
 
 const CartButton = () => {
-  const { mealCount } = useContext(CartContext);
+  const { totalAmount } = useContext(CartContext);
   return (
     <button className={styles["cart-button"]}>
       <CartIcon />
       <p>Your Cart</p>
-      <p className={styles["cart-count"]}>{mealCount}</p>
+      <p className={styles["cart-count"]}>{totalAmount}</p>
     </button>
   );
 };
