@@ -5,6 +5,7 @@ const CartContext = React.createContext({});
 export default CartContext;
 
 const addMeal = (meal) => (cart) => {
+  if (meal.amount <= 0) return cart;
   const prevMeal = cart[meal.id];
   const newMeal = prevMeal
     ? { ...prevMeal, amount: prevMeal.amount + meal.amount }

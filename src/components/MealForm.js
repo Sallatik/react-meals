@@ -3,13 +3,13 @@ import { useState, useContext } from "react";
 import CartContext from "../context/CartContext";
 
 const MealForm = ({ id, name, price }) => {
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState(1);
   const { addMeal } = useContext(CartContext);
 
   const onSumbit = (event) => {
     event.preventDefault();
     addMeal({ id, name, price, amount: +amount });
-    setAmount(0);
+    setAmount(1);
   };
 
   return (
