@@ -54,7 +54,7 @@ export const CartContextProvider = ({ children }) => {
         incrementMealAmount: (mealId) => setCart(incrementMealAmount(mealId)),
         decrementMealAmount: (mealId) => setCart(decrementMealAmount(mealId)),
         totalAmount: totalAmount(cart),
-        totalPrice: totalPrice(cart),
+        totalPrice: Math.round(totalPrice(cart) * 100) / 100,
         items: itemList(cart),
       }}
     >
