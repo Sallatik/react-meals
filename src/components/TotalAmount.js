@@ -5,7 +5,7 @@ import CartContext from "../context/CartContext";
 const TotalAmount = () => {
   const { totalPrice } = useContext(CartContext);
   return (
-    <section class={styles["total-amount"]}>
+    <section className={styles["total-amount"]}>
       <h2>Total Amount</h2>
       <p>${totalPrice}</p>
     </section>
