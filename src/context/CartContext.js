@@ -42,6 +42,8 @@ const totalPrice = (cart) =>
     .map(({ price, amount }) => price * amount)
     .reduce((a, b) => a + b, 0);
 
+const itemList = (cart) => Object.values(cart);
+
 export const CartContextProvider = ({ children }) => {
   const [cart, setCart] = useState({});
   return (
@@ -52,6 +54,7 @@ export const CartContextProvider = ({ children }) => {
         decrementMealAmount: (mealId) => setCart(decrementMealAmount(mealId)),
         totalAmount: totalAmount(cart),
         totalPrice: totalPrice(cart),
+        items: itemList(cart),
       }}
     >
       {children}
