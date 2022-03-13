@@ -7,10 +7,12 @@ import Cart from "./components/Cart";
 
 const App = () => {
   const [cartOpen, setCartOpen] = useState(false);
+  const openCart = () => setCartOpen(true);
+  const closeCart = () => setCartOpen(false);
   return (
     <CartContextProvider>
-      <Header onOpenCart={() => setCartOpen(true)} />
-      {cartOpen && <Cart onClose={() => setCartOpen(false)} />}
+      {cartOpen && <Cart onClose={closeCart} />}
+      <Header onOpenCart={openCart} />
       <Info />
       <MealList />
     </CartContextProvider>

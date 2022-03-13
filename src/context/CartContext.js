@@ -52,18 +52,15 @@ const round = (num, decimals) => {
 
 export const CartContextProvider = ({ children }) => {
   const [cart, setCart] = useState({});
+  const context = {
+    addMeal: (meal) => setCart(addMeal(meal)),
+    incrementMealAmount: (mealId) => setCart(incrementMealAmount(mealId)),
+    decrementMealAmount: (mealId) => setCart(decrementMealAmount(mealId)),
+    totalAmount: totalAmount(cart),
+    totalPrice: round(totalPrice(cart), 2),
+    items: itemList(cart),
+  };
   return (
-    <CartContext.Provider
-      value={{
-        addMeal: (meal) => setCart(addMeal(meal)),
-        incrementMealAmount: (mealId) => setCart(incrementMealAmount(mealId)),
-        decrementMealAmount: (mealId) => setCart(decrementMealAmount(mealId)),
-        totalAmount: totalAmount(cart),
-        totalPrice: round(totalPrice(cart), 2),
-        items: itemList(cart),
-      }}
-    >
-      {children}
-    </CartContext.Provider>
+    <CartContext.Provider value={context}>{children}</CartContext.Provider>
   );
 };
