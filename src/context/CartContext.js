@@ -45,11 +45,6 @@ const totalPrice = (cart) =>
 
 const itemList = (cart) => Object.values(cart);
 
-const round = (num, decimals) => {
-  const x = Math.pow(10, decimals);
-  return Math.round(num * x) / x;
-};
-
 export const CartContextProvider = ({ children }) => {
   const [cart, setCart] = useState({});
   const context = {
@@ -57,7 +52,7 @@ export const CartContextProvider = ({ children }) => {
     incrementMealAmount: (mealId) => setCart(incrementMealAmount(mealId)),
     decrementMealAmount: (mealId) => setCart(decrementMealAmount(mealId)),
     totalAmount: totalAmount(cart),
-    totalPrice: round(totalPrice(cart), 2),
+    totalPrice: totalPrice(cart).toFixed(2),
     items: itemList(cart),
   };
   return (
